@@ -1,0 +1,6 @@
+select col1,col2,col3,col4,col5,....coln from (
+    select rownum,col1,col2,col3,col4,col5,....coln 
+    order by cloumn_name_according_to_which_you_wanted_to_sort desc
+)
+group by condition
+having rownum='&n';
