@@ -1,0 +1,16 @@
+this syntax will never works
+
+select * from (
+    select rownum,col1,col2,col3,col4,col5,....coln 
+    order by cloumn_name_according_to_which_you_wanted_to_sort desc
+)
+group by condition
+having rownum='&n';
+
+because reason behind that was the 
+sql start from the  having clause if suppose we enter the value rownum 4 then 
+1st)sql will identify the 7 row in the table 
+2nd) sql will go to the group by check the condition according to taht condition it will make the group
+3rd) sql order by  will arrange the data according to the column we pass  it 
+4th) sql will select the column we provide
+5th) error wiil apper at this because all of the above are group level working  this( *= all) will go select all data it goes record level (row level) row level and column level caluse/condition  never work together
