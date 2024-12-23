@@ -13,4 +13,4 @@ sql start from the  having clause if suppose we enter the value rownum 4 then
 2nd) sql will go to the group by check the condition according to taht condition it will make the group
 3rd) sql order by  will arrange the data according to the column we pass  it 
 4th) sql will select the column we provide
-5th) error wiil apper at this because all of the above are group level working  this( *= all) will go select all data it goes record level (row level) row level and column level caluse/condition  never work together
+5th) error wiil apper at this because all of the above are group level working  this( *= all) will go select all data it goes record level (record level/row level) row level and column level caluse/condition  never work together
